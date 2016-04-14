@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.charisha.elternv1.PastRemindersElderlyActivity">
+    <item android:id="@+id/refresh" android:title="Refresh"
+        android:orderInCategory="100" android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/current" android:title="Current"
+    android:orderInCategory="100" android:showAsAction="ifRoom|withText" />
+
+</menu>

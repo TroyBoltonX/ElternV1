@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.charisha.elternv1.SettingsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="0dp"
+            android:id="@+id/h3"
+            android:weightSum="1"
+            android:layout_weight="0.03">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Add Elder"
+                android:id="@+id/text"
+                android:textSize="30dp"
+                android:textColor="#4021ff"
+                android:gravity="center"
+                android:background="#4beaff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:paddingTop="10dp"
+            android:id="@+id/h1"
+            android:weightSum="1"
+            android:layout_weight="0.03">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Elder&apos;s Username"
+                android:id="@+id/textView24"
+                android:paddingTop="10dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:paddingTop="10dp"
+            android:id="@+id/h2"
+            android:weightSum="1"
+            android:layout_weight="0.03">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameEditText"
+                android:layout_weight="1"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Elder&apos;s Password"
+            android:id="@+id/textView23"
+            android:layout_weight="0.03"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_weight="0.08">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passwordEditText"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/informText"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.03" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_weight="0.08">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                >
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Elder"
+                    android:id="@+id/createButton"
+
+                    android:onClick="createRelationship"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set up emergency call for elders"
+            android:id="@+id/button9"
+            android:layout_weight="0.03"
+            android:onClick="setupEmergency"
+            android:textColor="#ff0c2e"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

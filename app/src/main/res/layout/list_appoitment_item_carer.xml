@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title  "
+            android:id="@+id/titleTextView"
+            android:textSize="25dp"
+            android:textColor="#0b0bff"
+            android:textStyle="bold"
+            android:paddingLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:paddingBottom="0dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="86dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="elder"
+                android:id="@+id/elderTextView"
+                android:textSize="20dp"
+                android:textColor="#128398"
+                android:textStyle="bold|italic"
+                android:paddingLeft="30dp" />
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:text="date  "
+                android:id="@+id/dateTextView"
+                android:textSize="20dp"
+                android:textColor="#010101"
+                android:paddingLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:id="@+id/timeTextView"
+                android:textSize="20dp"
+                android:textColor="#010101"
+                android:paddingLeft="30dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:id="@+id/completedImage"
+            android:paddingLeft="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
